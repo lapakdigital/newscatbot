@@ -37,7 +37,7 @@ gold=$(cat info.tmp | grep -Po '(?<=gold":")[^"]*')
 if [[ $getok == "OK" ]]
 		then
 			printf "${ijo}Done${NC}\n"
-			printf ""${ijo}[!]${NC} Token : OK\n"
+			printf "${ijo}[!]${NC} Token : OK\n"
 			printf "${ijo}[!]${NC} User ID : $getid\n"
 			printf "${ijo}[!]${NC} Current Gold : $gold\n"
 		else
