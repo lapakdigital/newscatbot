@@ -33,7 +33,7 @@ printf "${kuning}[!]${NC} Checking Token..."
 checktoken=$(curl -s -d "token=$ctoken" 'http://www.newscat.com/api/user/info' -o "info.tmp")
 getok=$(cat info.tmp | grep -Po '(?<=message":")[^"]*')
 getid=$(cat info.tmp | grep -Po '(?<=id":")[^"]*')
-gold=$(cat inffo.tmp | grep -Po '(?<=gold":")[^"]*')
+gold=$(cat info.tmp | grep -Po '(?<=gold":")[^"]*')
 if [[ $getok == "OK" ]]
 		then
 			printf "${ijo}Done${NC}\n"
