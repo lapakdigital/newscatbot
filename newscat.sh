@@ -60,7 +60,7 @@ getnewsok=$(cat aid.txt | sed -n 1p)
 printf "${kuning}[!]${NC} Starting Bot..\n"
 botstart(){
 rm award.tmp 2> /dev/null
-bot=$(curl -s -X POST -d "token=$ctoken&aid" 'http://www.newscat.com/api/article/award' -o 'award.tmp')
+bot=$(curl -s -X POST -d "token=$ctoken&aid=$aid" 'http://www.newscat.com/api/article/award' -o 'award.tmp')
 getmessage=$(cat award.tmp | grep -Po '(?<=message":")[^"]*')
 getgold=$(cat award.tmp | grep -Po '(?<=gold":")[^"]*')
 getreward=$(cat award.tmp | grep -Po '(?<=award":)[^,]*')
