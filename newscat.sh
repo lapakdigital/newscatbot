@@ -63,7 +63,7 @@ rm award.tmp 2> /dev/null
 bot=$(curl -s -X POST -d "token=$ctoken&aid" 'http://www.newscat.com/api/article/award' -o 'award.tmp')
 getmessage=$(cat award.tmp | grep -Po '(?<=message":")[^"]*'
 getgold=$(cat award.tmp | grep -Po '(?<=gold":")[^"]*'
-getreward=$(cat award.tmp | grep -Po '(?<=award":,)[^"]*'
+getreward=$(cat award.tmp | grep -Po '(?<=award":)[^,]*'
 if [[ $getmessage == 'OK' ]]
 	then
 		printf "${ijo}[!]${NC} [ID : $aid ] [Reward : $getreward] [Gold : $getgold] [${ijo}Success${NC}]\n"
