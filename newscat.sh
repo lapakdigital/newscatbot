@@ -8,7 +8,7 @@ biru='\e[1;34m'
 NC='\e[0m'
 #intro
 printf "${biru}		                               
-			     Newscat APPS BOT
+			           Newscat APPS BOT
 				 Code By : Wanjas.com
 "
 printf "${kuning}	_________________________________________________________________${NC}\n\n"
