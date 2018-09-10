@@ -9,7 +9,7 @@ NC='\e[0m'
 #intro
 printf "${biru}	
 			           Newscat APPS BOT ${ijo}
-	Code By : Wanjas.com | facebook.com/ihsan.aryan | tambangakun@gmail.com ${merah}
+        Code By : www.anjas.com | facebook.com/ihsan.aryan | tambangakun@gmail.com ${merah}
 	                Agar Success Silahkan Hubungi Kontak Diatas 
 "
 printf "${kuning}	___________________________________________________________________________${NC}\n\n"
