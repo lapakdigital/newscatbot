@@ -12,7 +12,7 @@ printf "${biru}
 	Code By : Wanjas.com | facebook.com/ihsan.aryan | tambangakun@gmail.com ${merah}
 	                Agar Success Silahkan Hubungi Kontak Diatas 
 "
-printf "${kuning}	_________________________________________________________________${NC}\n\n"
+printf "${kuning}	___________________________________________________________________________${NC}\n\n"
 rm award.tmp aid.txt info.tmp 2> /dev/null
 if [[ ! -f token.reg ]]
 	then
