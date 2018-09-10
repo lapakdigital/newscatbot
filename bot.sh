@@ -25,7 +25,7 @@ if [[ $regtoken == "$ctoken" ]]
 	then
 		printf "${ijo}[!]${NC} Token Registered To BOT Server\n" 
 else
-	printf "${merah}[!]${NC} Please Regster Your Token\n"
+	printf "${merah}[!]${NC} Please Register Your Token\n"
 	printf "${kuning}[!]${NC} Contact : tambangakun@gmail.com | facebook.com/ihsan.aryan\n"
 	exit
 fi
