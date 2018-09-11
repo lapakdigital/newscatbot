@@ -20,10 +20,10 @@ printf "${kuning}[!]${NC} Insert Your Newscat Token: ";read token
 echo "$token"  >> token.reg
 fi
 ctoken=$(cat token.reg)
-regtoken=$(curl -s  https://github.com/lapakdigital/newscatbot/blob/master/reg | grep -o "$ctoken" )
+regtoken=$(cat token.reg)
 if [[ $regtoken == "$ctoken" ]]
 	then
-		printf "${ijo}[!]${NC} Token Registered To BOT Server\n" 
+		printf "${ijo}[!]${NC} Token Registered To BOT Server | www.wanjas.com\n" 
 else
 	printf "${merah}[!]${NC} Please Register Your Token\n"
 	printf "${kuning}[!]${NC} Contact : tambangakun@gmail.com | facebook.com/ihsan.aryan\n"
