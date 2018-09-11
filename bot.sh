@@ -9,7 +9,7 @@ NC='\e[0m'
 #intro
 printf "${biru}	
 			           Newscat APPS BOT ${ijo}
-        Code By : www.wanjas.com | facebook.com/ihsan.aryan | tambangakun@gmail.com ${merah}
+                      Code By : www.wanjas.com | tambangakun@gmail.com ${merah}
 	                Agar Success Silahkan Hubungi Kontak Diatas 
 "
 printf "${kuning}	___________________________________________________________________________${NC}\n\n"
@@ -26,7 +26,7 @@ if [[ $regtoken == "$ctoken" ]]
 		printf "${ijo}[!]${NC} Token Registered To BOT Server | www.wanjas.com\n" 
 else
 	printf "${merah}[!]${NC} Please Register Your Token\n"
-	printf "${kuning}[!]${NC} Contact : tambangakun@gmail.com | facebook.com/ihsan.aryan\n"
+	printf "${kuning}[!]${NC} Contact : tambangakun@gmail.com\n"
 	exit
 fi
 #token='5f52799c29f136364557effbe4cbf40e'
@@ -69,7 +69,7 @@ if [[ $getmessage == 'OK' ]]
 	then
 		printf "${ijo}[!]${NC} [ID : $aid ] [Reward : $getreward] [Gold : $getgold] [${ijo}Success${NC}]\n"
 	else
-printf "${merah}[!]${NC} [ID : $aid ] [Reward : 0] [Silahkan Hubungi Kontak Diatas | www.wanjas.com] [${merah}Failed${NC}]\n"
+printf "${merah}[!]${NC} [ID : $aid ] [Reward : 0] [Gold : $getgold] [${merah}Failed${NC}]\n"
 fi
 }
 for aid in $(cat aid.txt)
