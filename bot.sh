@@ -8,9 +8,7 @@ biru='\e[1;34m'
 NC='\e[0m'
 #intro
 printf "${biru}	
-			           Newscat APPS BOT ${ijo}
-                      Code By : www.wanjas.com | tambangakun@gmail.com ${merah}
-	                Agar Success Silahkan Hubungi Kontak Diatas 
+			           Newscat APPS BOT ${ijo}                   
 "
 printf "${kuning}	___________________________________________________________________________${NC}\n\n"
 rm award.tmp aid.txt info.tmp 2> /dev/null
@@ -23,10 +21,9 @@ ctoken=$(cat token.reg)
 regtoken=$(cat token.reg)
 if [[ $regtoken == "$ctoken" ]]
 	then
-		printf "${ijo}[!]${NC} Token Registered To BOT Server | www.wanjas.com\n" 
+		printf "${ijo}[!]${NC} Token Registered To BOT Server\n" 
 else
-	printf "${merah}[!]${NC} Please Register Your Token\n"
-	printf "${kuning}[!]${NC} Contact : tambangakun@gmail.com\n"
+	printf "${merah}[!]${NC} Please Register Your Token\n"	
 	exit
 fi
 #token='5f52799c29f136364557effbe4cbf40e'
